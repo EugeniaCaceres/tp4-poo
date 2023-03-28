@@ -57,6 +57,10 @@ class Agenda {
     });
   }
 
+  //ingreso nombre
+  //itero por cada contacto (ahora llamado "c") de la lista de contactos
+  //comparo el nombre de cada contacto "c" contra el parametro nombre
+  // si lo encuentra, osea que se cumple la igualdad, devuelvo true, sino devuelvo false
   buscarContacto(nombre) {
     const contacto = this.contactos.find((c) => c.nombre === nombre);
     if (contacto) {
@@ -87,6 +91,7 @@ class Agenda {
   }
 }
 
+// main
 function mostrarMenu() {
   console.log("Menú de opciones:");
   console.log("1. Añadir contacto");
@@ -101,7 +106,11 @@ let opcion;
 
 do {
   mostrarMenu();
-  opcion = parseInt(prompt("Selecciona una opción del menú: 1 para introducir el nombre del contacto. 2 para buscar un contacto. 3 para listar los contactors. 4 para eliminar un contacto. 5 para salir."));
+  opcion = parseInt(
+    prompt(
+      "Selecciona una opción del menú: 1 para introducir el nombre del contacto. 2 para buscar un contacto. 3 para listar los contactors. 4 para eliminar un contacto. 5 para salir."
+    )
+  );
   switch (opcion) {
     case 1:
       const nombre = prompt("Introduce el nombre del contacto");
