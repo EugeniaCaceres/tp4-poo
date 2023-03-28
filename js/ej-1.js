@@ -10,17 +10,17 @@ class Auto {
   set apagar(value = false) {
     this.estado = value;
   }
-  set encender (value = true){
+  set encender(value = true) {
     this.encender = vaule;
   }
 }
-let color = prompt ("¿Qué color busca?")
+let color = prompt("¿Qué color busca?");
 
-let marca = prompt ("¿Qué marca busca?")
+let marca = prompt("¿Qué marca busca?");
 
-let modelo = prompt ("¿Qué modelo busca?")
+let modelo = prompt("¿Qué modelo busca?");
 
-let auto = new Auto(color, marca, modelo)
-document.write (auto.color, "<br>")
-document.write (auto.marca, "<br>")
-document.write (auto.modelo)
+let auto = new Auto(color, marca, modelo);
+document.write(auto.color, "<br>");
+document.write(auto.marca, "<br>");
+document.write(auto.modelo);

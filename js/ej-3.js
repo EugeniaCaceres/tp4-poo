@@ -22,5 +22,7 @@ let ingresarAltura = parseInt(prompt("ingrese la altura del rectangulo."));
 
 let ingresarAncho = parseInt(prompt("Ingrese el ancho del rectangulo."));
 
-let obj_rectangulo = new Rectangulo(altura=ingresarAltura, ancho=ingresarAncho);
-
+let obj_rectangulo = new Rectangulo(
+  (altura = ingresarAltura),
+  (ancho = ingresarAncho)
+);

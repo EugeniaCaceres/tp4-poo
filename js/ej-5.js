@@ -63,12 +63,28 @@ class Persona {
   }
 }
 
-const persona1 = new Persona("Juan", 25, Persona.generarDni(), "H", 70, 1.8, 1996);
+const persona1 = new Persona(
+  "Juan",
+  25,
+  Persona.generarDni(),
+  "H",
+  70,
+  1.8,
+  1996
+);
 document.write(persona1.mostrarDatos);
 document.write(persona1.mostrarGeneracion);
 document.write(persona1.esMayorDeEdad, "<br>");
 
-const persona2 = new Persona("Ana", 17, Persona.generarDni(), "M", 60, 1.65, 2005);
+const persona2 = new Persona(
+  "Ana",
+  17,
+  Persona.generarDni(),
+  "M",
+  60,
+  1.65,
+  2005
+);
 document.write(persona2.mostrarDatos);
 document.write(persona2.mostrarGeneracion);
 document.write(persona2.esMayorDeEdad, "<br>");
